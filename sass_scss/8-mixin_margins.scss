@@ -1,0 +1,23 @@
+/* Writes a Sass file that assigns:
+
+	- Margin left and right at 10px to body tags
+	- Margin left and right at 15px to div tags
+	- You must use a mixin */
+
+@mixin body-mixin {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+@mixin div-mixin {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+body {
+	@include body-mixin;
+}
+
+div {
+	@include div-mixin;
+}
